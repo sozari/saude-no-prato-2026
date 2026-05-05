@@ -48,8 +48,69 @@ h1 {
 }
 
 
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    border: 1px solid #E67E22;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+
+.btn-full {
+    background-color: #E67E22;
+    margin-right: 20px;
+}
+
+
+.btn:hover,
+.btn:active {
+    background-color: #CF6D17;
+    border-color: #CF6D17;
+}
+
+
+/************************************/
+/********** MENU NAVEGAÇÃO **********/
+/************************************/
+
+
 .logo {
     width: 100px;
 }
 
 
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-nav>ul {
+    list-style-type: none;
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+}
+
+
+.main-nav>ul>li>a:link,
+.main-nav>ul>li>a:visited {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 6px;
+}
+
+
+.main-nav>ul>li>a:hover, 
+.main-nav>ul>li>a:active {
+    border-bottom: 2px solid #E67E22;
+    font-size: 21px;
+}
